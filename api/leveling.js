@@ -4,8 +4,8 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-registerFont('.fonts/spaceranger.ttf', { family: 'Academy' });
-registerFont('.fonts/spaceranger.ttf', { family: 'spaceranger' });
+registerFont('./fonts/spaceranger.ttf', { family: 'Academy' });
+registerFont('./fonts/spaceranger.ttf', { family: 'spaceranger' });
 // registerFont('path/to/font.ttf', { family: 'CustomFont' });
 
 app.post('/api/generate', async (req, res) => {
