@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-registerFont('path/to/adriana.ttf', { family: 'Adriana' });
+registerFont('./Academy.ttf', { family: 'Academy' });
 registerFont('path/to/academy.ttf', { family: 'Academy' });
 // registerFont('path/to/font.ttf', { family: 'CustomFont' });
 
